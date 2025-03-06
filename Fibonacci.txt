@@ -1,0 +1,14 @@
+void main(){
+  int num = 5;
+  fibonacci(num);
+}
+fibonacci(int num){
+  int num1=0,num2=1,tem=0;
+  print("Fibonacci series is : $num1 $num2");
+  for(int i = 2; i < num;i++){
+    int a = num1 + num2;
+    print(a);
+    num1 = num2;
+    num2 = a;
+  }
+}

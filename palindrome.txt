@@ -1,0 +1,16 @@
+void main() {
+  int num = 521;
+  isPalindrome(num);
+}
+
+void isPalindrome(int num) {
+  int numcopy = num, digit, rev = 0;
+
+  while (num != 0) {
+    digit = num % 10;
+    rev = rev * 10 + digit;
+    num = num ~/ 10;
+  }
+
+  print(numcopy == rev ? "Palindrome" : "Not Palindrome");
+}
